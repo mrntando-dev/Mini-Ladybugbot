@@ -1,0 +1,8 @@
+node_modules/
+session/
+*.log
+.env
+session_data.json
+package-lock.json
+yarn.lock
+.DS_Store
