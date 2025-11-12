@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ladybug-whatsapp-bot
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run web
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /status
+    autoDeploy: true
